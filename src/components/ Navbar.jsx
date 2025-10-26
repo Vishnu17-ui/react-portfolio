@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export const  Navbar = () => {
+    const [slideMenu, setSlideMenu] = useState (false)
   return (
      <header>
             <div className="header container flex">
@@ -8,12 +9,13 @@ export const  Navbar = () => {
                     <div>Bishnu</div>
                     <div className="line">Full Stack Developer</div>
                 </div>
-                <label htmlFor="hamburgerMenu">
+                <label htmlFor="hamburgerMenu" onClick={() => setSlideMenu(!slideMenu)} >
                     <i className="fa-solid fa-bars"></i>
                 </label>
-                <input type="checkbox" id="hamburgerMenu" />
-                <div className="menu">
-                    <ul className="flex navigation">
+                <input type="checkbox" id="hamburgerMenu"/>
+                <div className={slideMenu ? "menu slide" : "menu"}>
+                    <ul className="flex navigation"
+                    onClick={() => setSlideMenu(!slideMenu)}>
                         <li><a href="#hero">Home</a> </li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#projects">Project</a></li>
