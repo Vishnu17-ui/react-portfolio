@@ -9,7 +9,7 @@ export const Contact = () => {
         <div className="flex social">
             <a href=""><i className="fa-brands fa-linkedin"></i></a>
             <a href=""><i className="fa-brands fa-github"></i></a>
-            <a href=""><i className="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/zomvie___17/"><i className="fa-brands fa-instagram"></i></a>
             <a href=""><i className="fa-solid fa-mobile-button"></i></a>
         </div>
         <h3>OR</h3>

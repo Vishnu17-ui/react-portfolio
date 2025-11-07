@@ -4,9 +4,9 @@ export const Footer = () => {
   return (
     <>
     <footer>
-    <footer class="flex-center">
-        <div class="top flex">
-        <div class="links">
+    <footer className="flex-center">
+        <div className="top flex">
+        <div className="links">
             <h3>Links</h3> 
              <ul>
                 <li><a href="#hero">Home</a></li>
