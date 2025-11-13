@@ -16,7 +16,7 @@ export const Contact = () => {
 
         <div className="flex-center">
             <a href="" className="email-section flex-center">
-                <span>bishnu@gmail.com</span>
+                <span>bkv0540103@gmail.com</span>
                 <div className="email-icon flex-center">
                     <i className="fa-solid fa-paper-plane"></i>
                 </div>
