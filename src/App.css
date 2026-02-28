@@ -269,6 +269,7 @@ header .header {
   margin-top: 2rem;
   gap: 1rem;
 }
+
 /* <!-- about me section  --> */
 .about {
   margin-top: 5rem;
@@ -387,6 +388,7 @@ footer .top ul li {
     cursor: pointer;
     display: block;
   }
+
   .menu {
     position: absolute;
     background: var(--body-bg);
@@ -399,6 +401,7 @@ footer .top ul li {
 
     left: 100vw;
     transition: all 0.5s;
+    
   }
   .menu .navigation {
     flex-direction: column;
@@ -409,7 +412,11 @@ footer .top ul li {
     line-height: 2.5rem;
   }
 
-  #hamburgerMenu:checked + .menu {
+  /* #hamburgerMenu:checked + .menu {
+    left: calc(100vw - 250px);
+  } */
+
+  .slide {
     left: calc(100vw - 250px);
   }
 

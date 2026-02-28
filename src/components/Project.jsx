@@ -37,11 +37,9 @@ export const Project = () => {
   return (
     <section className="projects container" id="projects">
         <Title title= "My Projects"/>
-    
     <div className="grid project-container"> 
-{projects.map((project, i)=> <Card key={i} {...project} />)
-}
+{projects.map((project, i)=> (<Card key={i} {...project} />))}
     </div>
     </section>
-  )
+  );
 }

@@ -13,7 +13,8 @@ export const About = () => {
             </div>
             <div className="my-bio container">
                 <h2>Bishnu Prasad B.K.</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur voluptas repellendus beatae suscipit doloribus accusantium enim eaque repudiandae obcaecati, error necessitatibus, ipsum ipsam non exercitationem eveniet placeat earum quis nobis?
+                <p>
+                    I’m a bootcamp-trained Front-End Developer with 1+ year of experience building clean, responsive, and user-focused web applications.
                 </p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit rerum, sequi aliquid pariatur consectetur inventore suscipit eum ad, in magnam voluptate ipsa impedit vero voluptatum cum accusamus animi id necessitatibus!
                 </p>

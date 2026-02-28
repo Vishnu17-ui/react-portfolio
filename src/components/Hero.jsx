@@ -12,7 +12,9 @@ export const Hero = () => {
             <p>I love coding and also to share other's what I know</p>
             <div>
                 <a href="./assets/resume page - solution/index.html" download>
-                    <button>Download CV<i className="fa-solid fa-download"></i></button>
+                    <button>
+                        Download CV<i className="fa-solid fa-download"></i>
+                        </button>
                 </a>
             </div>
         </div>
@@ -39,11 +41,9 @@ export const Hero = () => {
             <div className="flex-center icon-container">
                 <i className="fa-solid fa-award"></i>
             </div>
-            <div>
                 <span>5+ Projects</span>
                 <p>Completed</p>
             </div>
-        </div>
         <div className="info-divider"></div>
 
         <div className="flex info-content">
@@ -57,5 +57,5 @@ export const Hero = () => {
         </div>
     </section>
     </>
-  )
-}
+  );
+};
