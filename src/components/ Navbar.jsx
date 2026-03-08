@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 
 export const  Navbar = () => {
-    const [slideMenu, setSlideMenu] = useState (false);
-    return (
+    const [slideMenu, setSlideMenu] = useState (false)
+  return (
      <header>
             <div className="header container flex">
                 <div className="logo flex">
@@ -14,27 +14,16 @@ export const  Navbar = () => {
                 </label>
                 <input type="checkbox" id="hamburgerMenu"/>
                 <div className={slideMenu ? "menu slide" : "menu"}>
-                    <ul 
-                    className="flex navigation"
+                    <ul className="flex navigation"
                     onClick={() => setSlideMenu(!slideMenu)}>
-                        <li>
-                            <a href="#hero">Home</a>
-                        </li>
-                        <li>
-                            <a href="#skills">Skills</a>
-                        </li>
-                        <li>
-                            <a href="#projects">Project</a>
-                        </li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Project</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
     </header>
-  );
+  )
 };

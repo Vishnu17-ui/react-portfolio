@@ -269,7 +269,6 @@ header .header {
   margin-top: 2rem;
   gap: 1rem;
 }
-
 /* <!-- about me section  --> */
 .about {
   margin-top: 5rem;
@@ -298,7 +297,6 @@ header .header {
   border-radius: 5px;
 }
 .my-bio .tag + div > span:hover {
-  background: grey;
   cursor: pointer;
   transform: scale(1.3);
   transition: all 0.5s;
@@ -388,7 +386,6 @@ footer .top ul li {
     cursor: pointer;
     display: block;
   }
-
   .menu {
     position: absolute;
     background: var(--body-bg);
@@ -401,7 +398,6 @@ footer .top ul li {
 
     left: 100vw;
     transition: all 0.5s;
-    
   }
   .menu .navigation {
     flex-direction: column;
@@ -416,7 +412,7 @@ footer .top ul li {
     left: calc(100vw - 250px);
   } */
 
-  .slide {
+  .slide{
     left: calc(100vw - 250px);
   }
 

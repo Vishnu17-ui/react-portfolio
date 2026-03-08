@@ -36,20 +36,6 @@ function App() {
     setDarkMode(!darkMode);
   };
 
-  const [scrollYPosition, setscrollYPosition] = useState (0);
-
-  const handleOnScrolly = (e) => {console.log(e);}
-
-  useEffect(()=>{
-  // end of the renderToPipeableStream, run following code
-window.addEventListener("scroll", handleOnScrolly);
-
-  // clean up the events
-  return() => {
-    window.removeEventListener("scroll", handleOnScrolly);
-  }
-  }, [])
-  console.log(scrollYPosition)
   return (
     <>
       {/* Dark mode toggle */}
