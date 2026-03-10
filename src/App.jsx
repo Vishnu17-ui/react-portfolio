@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import './App.css';
 import luffy from './assets/luffy.png';
 import sub from './assets/sub.png';
@@ -9,8 +8,28 @@ import { Footer } from '../src/components/Footer';
 import { Hero } from '../src/components/Hero';
 import { Project } from '../src/components/Project';
 import { Skills } from '../src/components/Skills';
+import React, {useState, useEffect} from 'react';
 
 function App() {
+
+ const [scrollYPosition, setScrollyPosition] = useState(0);
+  
+  const handleOnScrollY = () => {
+   setScrollyPosition(window.scrollY);
+  };
+  useEffect(()=>{
+    // end of the render, run following code
+    window.addEventListener("scroll", handleOnScrollY);
+
+
+    // clean up the events
+    return () => {window.removeEventListener("scroll", handleOnScrollY);
+  };
+  },[]);
+
+  console.log(scrollYPosition);
+
+
   // Initialize dark mode based on localStorage or system preference
   const [darkMode, setDarkMode] = useState(() => {
     const savedMode = localStorage.getItem('darkMode');
@@ -69,7 +88,7 @@ function App() {
         <Contact />
 
         {/* Footer section */}
-        <Footer />
+        <Footer scrollYPosition={scrollYPosition} />
       </div>
     </>
   );

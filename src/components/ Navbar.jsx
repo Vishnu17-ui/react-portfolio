@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 export const  Navbar = () => {
-    const [slideMenu, setSlideMenu] = useState (false)
+    const [slideMenu, setSlideMenu] = useState (false);
   return (
      <header>
             <div className="header container flex">

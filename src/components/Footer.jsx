@@ -1,9 +1,8 @@
-import React from 'react'
 
-export const Footer = () => {
+
+export const Footer = ({scrollYPosition}) => {
   return (
     <>
-    <footer>
     <footer className="flex-center">
         <div className="top flex">
         <div className="links">
@@ -31,12 +30,13 @@ export const Footer = () => {
             Made by me with 🌻
         </div>
     </footer>
-</footer>
-    <a href="#hero">
+    {scrollYPosition > 800 && ( 
+        <a href="#hero">
         <div class="goUp flex-center">
             <i class="fa-solid fa-chevron-up"></i>
         </div> 
     </a>
+    )}
     </>
-  )
-}
+    )
+    }
