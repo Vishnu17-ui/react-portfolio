@@ -12,22 +12,6 @@ import React, {useState, useEffect} from 'react';
 
 function App() {
 
- const [scrollYPosition, setScrollyPosition] = useState(0);
-  
-  const handleOnScrollY = () => {
-   setScrollyPosition(window.scrollY);
-  };
-  useEffect(()=>{
-    // end of the render, run following code
-    window.addEventListener("scroll", handleOnScrollY);
-
-
-    // clean up the events
-    return () => {window.removeEventListener("scroll", handleOnScrollY);
-  };
-  },[]);
-
-  console.log(scrollYPosition);
 
 
   // Initialize dark mode based on localStorage or system preference
@@ -88,7 +72,7 @@ function App() {
         <Contact />
 
         {/* Footer section */}
-        <Footer scrollYPosition={scrollYPosition} />
+        <Footer />
       </div>
     </>
   );
